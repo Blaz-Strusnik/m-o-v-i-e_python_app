@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'film/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'film/css/main.css' %}">
+
+
+  <title>My movie website</title>
+</head>
+
+<body>
+
+
+
+
+  <section class="jumbotron text-center justify-content-center">
+    <h2>Movie Info</h2>
+    <form class="form-group  ">
+      <div class="input-group mb-3 ">
+        <input type="search" name="search" id="search" class="form-control " placeholder="Type in movie title"
+          aria-label="" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit" id="submit" id="button-addon2">Search</button>
+
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h4><u>Movie info</u></h4>
+          <br>
+          <h5 id="movieInformation"></h5>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h4><u>Search results</u></h4>
+          <br>
+          <h5 id="movieInformation3"></h5>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="{% static 'film/js/jquery-3.4.1.js' %}"></script>
+  <script src="{% static 'film/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'film/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'film/js/myJS.js' %}"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
